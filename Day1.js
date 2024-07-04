@@ -68,10 +68,32 @@ alert("if your child age 12 or less than 12 Your child can enter the park");
 
 QUESTION 3
 
-
+/ SORU 1: Elektrik sinyali geliyor yada gelmiyor bu duruma göre lamba yanar, lamba yanmaz yazan kod bloğunu oluşturun
+ sinyal bilgisini kullanıcıdan alıyoruz
   
-
+/ QUESTION 1: Create a code block that says the lamp will turn on or not, depending on whether the electrical signal is coming or not.
+ We receive signal information from the user
 
 
 */
+
+const electricalsignal=prompt("Signal is coming or not Say YES\NO");
+
+if (electricalsignal==="YES") {console.log("Lamp Will turn on");}
+    
+ else {console.log("Lamp Will turn off");
+    
+}
+
+/*
+
+QUESTION 4
+ Program that writes the message that people over the age of 18 can vote, otherwise it writes the message that they cannot votewith TERNARY!
+*/
+
+let yas =15
+
+const message = yas< 18 ? console.log("You Can't Vote") : console.log("You can vote");
+
+
 
