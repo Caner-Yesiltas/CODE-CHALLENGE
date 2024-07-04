@@ -13,7 +13,6 @@ function isEven(number) {
 console.log(isEven(4)); //true
 console.log(isEven(7)); //FALSE
 
-
 /*
 
 Question 6
@@ -27,14 +26,50 @@ Write a code which  can give grades to students according to theirs scores:
 
 */
 
-const studentscore=Number(prompt("Enter Student Score"));
+const studentscore = Number(prompt("Enter Student Score"));
 
-if (studentscore>= 80 || studentscore <=100) { console.log("Your Note Is A");}
-
-
-
-
-else {
-    
+if (studentscore >= 80 && studentscore <= 100) {
+  console.log("Your Note Is A");
+} else if (studentscore >= 70 && studentscore <= 89) {
+  console.log("Your Note Is B");
+} else if (studentscore >= 60 && studentscore <= 69) {
+  console.log("Your Note Is C");
+} else if (studentscore >= 50 && studentscore <= 59) {
+  console.log("Your Note Is D");
+} else if (studentscore >= 0 && studentscore <= 49) {
+  console.log("Your Note Is F");
+} else {
+  console.log("Please Enter between 1-100 Number, you Put Wrong Number");
 }
 
+/*
+
+Question 7
+
+Check if the season is Autumn, Winter, Spring or Summer.
+   If the user input is :
+   - September, October or November, the season is Autumn.
+   - December, January or February, the season is Winter.
+   - March, April or May, the season is Spring
+   - June, July or August, the season is Summer
+*/
+
+const season = prompt("Select a month with only first one is capital letter");
+
+if (season === "September" || season === "October" || season === "November") {
+  console.log("Your Season is Autumn");
+} else if (
+  season === "December" ||
+  season === "January" ||
+  season === "February"
+) {
+  console.log("Your Season is Winter");
+} else if (season === "March" || season === "April" || season === "May") {
+  console.log("Your Season is Spring");
+} else if (season === "June" || season === "July" || season === "August") {
+  console.log("Your Season is Summer");
+} else {
+  console.log(
+    "Enter with small letters except First Letter month name, You did something wrong"
+  );
+}
