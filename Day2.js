@@ -134,3 +134,42 @@ const age = 20;
 const isVIP = true;
 
 */
+
+const age = 20;
+const isVIP = true;
+
+if (age > 18 && isVIP) {
+  console.log("Welcome VIP");
+} else if (age > 18 && !isVIP) {
+  console.log("Welcome");
+} else if (age <= 18) {
+  console.log("You cannot log in");
+} else {
+  console.log("Please Enter valid age");
+}
+
+/*
+
+Question 11
+
+Write an if-else structure that gives clothing suggestions based on the weather.
+If the weather is "sunny" print "Wear a T-shirt", if it is "rainy" print "Take an umbrella", if it is "snowy" print "Wear a coat".
+For other situations, print "Check the weather."
+
+const weather = "rainy"; // Test this value by varying it with different weather conditions.
+const weather = "rainy";
+*/
+
+const weather = prompt(
+  "Please Choose weather type and enter rainy/sunny/snowy"
+);
+
+if (weather == "sunny") {
+  console.log("Wear a T-shirt");
+} else if (weather == "rainy") {
+  console.log("Take an umbrella");
+} else if (weather == "snowy") {
+  console.log("Wear a coat");
+} else {
+  console.log("Check the weather");
+}
