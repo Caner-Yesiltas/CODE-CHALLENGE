@@ -73,3 +73,64 @@ if (season === "September" || season === "October" || season === "November") {
     "Enter with small letters except First Letter month name, You did something wrong"
   );
 }
+
+/*
+
+Question 8
+
+ Check if a day is weekend day or a working day. Your script will take day as an input.
+
+*/
+
+const day = prompt("Enter a day");
+
+if (
+  day === "monday" ||
+  day === "tuesday" ||
+  day === "wednesday" ||
+  day === "thursday" ||
+  day === "Friday"
+) {
+  console.log("It's a weekday");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("It's a weekend");
+} else {
+  console.log("Please Enter Just a day ");
+}
+
+/*
+
+Question 9
+
+How much would the shipping cost for a shipment 400 km away based on the following criteria?
+0-500 km: 50 TL
+501-999 km: 100 TL
+1000+ km: 500 TL
+
+
+*/
+
+const distance = 400;
+
+if (distance >= 0 && distance <= 500) {
+  console.log("Cost will be 50 TL ");
+} else if (distance >= 501 && distance <= 999) {
+  console.log("Cost will be 100 TL ");
+} else if (distance >= 1000) {
+  console.log("Cost will be 500 TL ");
+} else {
+  console.log("Please enter a valid distance ");
+}
+
+/*
+
+Question 10
+
+1- Write an if-else structure that gives different messages depending on the user's age and membership status.
+ If the user is over 18 and is a VIP member, print "Welcome, VIP Member".
+ If the age is over 18 and a regular member, print "Welcome".
+ If you are 18 or younger, print "You cannot log in".
+const age = 20;
+const isVIP = true;
+
+*/
