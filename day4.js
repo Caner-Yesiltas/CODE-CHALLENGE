@@ -140,9 +140,75 @@ Here are some loop questions, listed from easy to difficult, that will help you 
 
 those questions generated from ai, it can be the same before I make this. So here we go 
 
+Print numbers from 1 to 10:
+
+Requirement: Use for loop
+Task: Write a script that prints the numbers from 1 to 10.
+
 */
 
+for(let z=1 ; z<=10; i++ ) {
+    console.log(z);
+}
 
 
 
+/*
 
+
+
+Question 25
+
+Sum of numbers from 1 to 10:
+
+Requirement: Use while loop
+Task: Write a script that calculates the sum of numbers from 1 to 10
+
+
+
+*/
+
+let sum=0;
+let i=1;
+
+while (let<=10) {
+
+    sum+= i;
+
+    i++;
+    
+}
+
+console.log(sum);
+
+
+/*
+
+
+Question 26
+
+Print even numbers between 1 and 20:
+
+Requirement: Use for loop
+Task: Write a script that prints all even numbers between 1 and 20
+
+
+*/
+
+for (let i=1 ; i<=20 ; i++ )
+    { if(i%2===0) {console.log(i);}
+
+    }
+
+    /*
+
+
+Question 26
+
+Generate an array of 5 random numbers:
+
+Requirement: Use while loop
+Task: Write a script that generates an array of 5 random numbers between 0 and 100
+
+
+*/
