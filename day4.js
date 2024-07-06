@@ -276,16 +276,15 @@ let str = "hello"; // en basta string bir degisken tanimlayarak tersden yazdirma
 let reversedStr = ""; // sonra tersten yazdiracagimiz hello yazisini saklayacak baska bir degisken tanimliyoruz ve icine saklamak icin bos birakiyoruz
 
 let i = str.length - 1; // sondan basa yazabilmemiz icin str.length string hellonun 5 karakter uzunlugunda oldugunu gosterir birde -1 diyerek 1 cikartiriz index
-// ile ilgili bir seymis fakat o konuya daha gelmedigim icin simdlik tersten string karakteri yazdirmak icin karakter sayisi -1 demem yeterli 
+// ile ilgili bir seymis fakat o konuya daha gelmedigim icin simdlik tersten string karakteri yazdirmak icin karakter sayisi -1 demem yeterli
 
-while (i >= 0) { // dongu 4 - 3 - 2- 1- 0 oldugu icin sondan itibaren o yuzden bu degeri verdik 
+while (i >= 0) {
+  // dongu 4 - 3 - 2- 1- 0 oldugu icin sondan itibaren o yuzden bu degeri verdik
 
   reversedStr += str[i]; // str 4 de 0 str 3 de l stre 2 de l str1 de e str 0 dada h yazilir ve her bir deger toplanarak yeni olusturdugumuz reversedstr degiskenine atanir
   i--;
 }
 console.log(reversedStr);
-
-
 
 /*
 
@@ -299,13 +298,14 @@ Task: Write a script that finds the largest number in a given array.
 
 */
 
-let numbers =[3, 5, 7, 2, 8]; // sana en buyuk numaralari bul diyorsa kafana gore array yap yani kendin ata
-let largest = numbers[0]; // baslangic noktasini 0 yapmisiz dizide ki en buyuk elemani bulmak icin neden anlamadim 
+let numbers = [3, 5, 7, 2, 8]; // sana en buyuk numaralari bul diyorsa kafana gore array yap yani kendin ata
+let largest = numbers[0]; // baslangic noktasini 0 yapmisiz dizide ki en buyuk elemani bulmak icin neden anlamadim
 
 for (let i = 1; i < numbers.length; i++) {
-    if (numbers[i] > largest) {
-        largest = numbers[i];
-    }
+  if (numbers[i] > largest) {
+    //  let largest = numbers[0];  burasi ile releative numbers i degisirken largestda degisiyor bir suru deger bakiyor en buyuk olan degeri seciyor sonra da bu degeri largest degiskenine atiyor
+    largest = numbers[i];
+  }
 }
 console.log(largest);
 
@@ -318,3 +318,61 @@ Print Numbers from 1 to 5
 Task: Write a script that prints numbers from 1 to 5 using a do-while loop.
 
 */
+
+let i = 1;
+
+do {
+  console.log(i); // tek fark while sona geliyor kosul sonunda olusacak sonuc basa geliyor
+  i++;
+} while (l <= 5);
+
+/* interviwe sorulari bitmistir
+
+
+Question 33 
+
+Sum of Numbers from 1 to 10
+Task: Write a script that calculates the sum of numbers from 1 to 10 using a do-while loop.
+
+*/
+
+let i = 1;
+let sum = 0;
+
+do {
+  console.log(i);
+  sum += i;
+
+  i++;
+} while (i <= 10);
+
+console.log(sum);
+
+/* interviwe sorulari bitmistir
+
+
+Question 33 
+
+Print Even Numbers from 2 to 10
+Task: Write a script that prints even numbers from 2 to 10 using a do-while loop.
+
+
+*/
+
+let i = 2;
+
+do {
+  console.log(i);
+
+  i += 2;
+} while (i <= 10);
+
+// this is second way to make it solve this problem with using if
+
+let num = 2;
+do {
+  if (num % 2 === 0) {
+    console.log(num);
+  }
+  num++;
+} while (num <= 10);
