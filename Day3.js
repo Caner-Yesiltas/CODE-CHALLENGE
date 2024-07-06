@@ -82,11 +82,8 @@ Write a for loop that prints numbers from 1 to 5.
 
 */
 
-let index=1
-
-
-for (let i=1; i<=5; i++) {
-    console.log(i);
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
 }
 
 /*
@@ -96,3 +93,82 @@ Question 15
 Write a for loop that prints even numbers from 0 to 10.
 
 */
+
+for (let a = 0; a <= 10; a += 2) {
+  console.log(a);
+}
+
+/*
+
+Question 16
+
+Write a for loop that prints numbers from 10 to 1 in reverse order.
+
+
+*/
+
+for (let c = 10; c >= 1; c--);
+{
+  console.log(c);
+}
+
+/*
+
+Question 16
+
+Write a for loop that calculates the sum of numbers from 1 to 10.
+
+
+*/
+
+let sum = 0;
+
+for (let d = 1; d <= 10; d++) {
+  sum += d;
+}
+
+console.log("Total" + sum);
+
+/*
+
+Question 17
+
+Write a for loop that prints the odd numbers from 1 to 20.
+
+
+*/
+
+for (let g = 1; g <= 20; g += 2) {
+  console.log(g);
+}
+
+/*
+
+Question 18
+
+Write a for loop that calculates the factorial of numbers from 1 to 10
+
+
+*/
+
+let Factorial = 1;
+
+for (let h = 1; h <= 10; h++) Factorial *= h;
+
+{
+}
+
+/*
+
+Question 19
+
+Write a for loop that prints the numbers from 1 to 100 that are divisible by 5.
+
+
+*/
+
+for (let j = 1; j <= 100; j++) {
+  if (j % 5 === 0) {
+    console.log(j);
+  }
+}
