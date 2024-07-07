@@ -1,10 +1,10 @@
 # Code Challenge
 
-![Progress](https://progress-bar.dev/7/?scale=500&title=Solved&width=400&color=babaca&suffix=/500)
+![Progress](https://progress-bar.dev/32/?scale=500&title=Solved&width=400&color=babaca&suffix=/500)
 
 **Goal: Solve 500 JavaScript Algorithm Problems**
 
-Current Progress: 7/500
+Current Progress: 32/500
 
 [Click here to update progress](#updating-progress)
 
