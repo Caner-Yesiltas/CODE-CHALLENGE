@@ -76,9 +76,4 @@ sayGoodbye("Bob"); // second way
 
 
 
- /*
-Question 38
 
-
-
-*/
