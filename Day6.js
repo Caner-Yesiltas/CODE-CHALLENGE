@@ -37,7 +37,7 @@ Write a function that converts each element in an array to a string
 */
 
 function convertToString(arr) {
-  return arr.map(string);
+  return arr.map(String);
 }
 
 console.log(convertToString([1, 2, 3]));
@@ -117,13 +117,40 @@ function bul(harf) {
   return toplam;
 }
 
-
 /*
 
 Question 42
 
-
+arrow function that returns the sum of two numbers
 
 */
 
+const addition = (a, b) => (sum = a + b);
 
+console.log(addition(2, 5));
+
+/*
+
+Question 43
+
+Take 1 parameter and check if it is a multiple of 3
+
+*/
+
+const checkMultiple = (c) =>
+  c % 3 === 0 ? "3'un katidir" : "3un kati degildir"; // aslinda burada 3e kalansiz bolunurmu diyor 3e kalansiz bolunen sey 3un katidir mantiken
+
+console.log(checkMultiple(124523));
+
+/*
+
+Question 44
+
+find the larger of two numbers
+
+*/
+
+const biggestNumber = (f, g) =>
+  f < g ? `The Biggest Number is ${g}` : `The Biggest Number is ${f}`;
+
+console.log(biggestNumber(234, 6745));
