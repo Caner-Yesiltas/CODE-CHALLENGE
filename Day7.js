@@ -57,3 +57,55 @@ function fibonacci(n) {
 }
 
 console.log(fibonacci(5));
+
+/*
+
+Question 46
+
+JS-CC-01 : Reverse String
+Purpose of the this coding challenge is to write a code that given a string , returns reverse of it. $$$$$ IMPORTANT !!! 
+
+*/
+
+function tersDondurme(kelime) {
+  let tersKelime = "";
+
+  for (let i = kelime.lenght - 1; i >= 0; i--) {
+    terskelime + -kelime[i];
+  }
+
+  console.log(tersKelime);
+}
+
+tersDondurme(str);
+
+/*
+
+Question 46
+
+JS-CC-02 : Check Palindrome
+Purpose of the this coding challenge is to write a code that checks whether a string is palindromic or not.
+
+What is palindrome?
+
+A palindrome is a word, number, phrase, or other sequence of symbols that reads the same backwards as forwards, such as the words madam or racecar, and the sentence: "A man, a plan, a canal – Panama".
+
+*/
+
+const tersDondurme = (kelime) => {
+  return kelime.split("").reverse().join("");
+};
+
+const palindrome = (kelime, tersDondurme) =>
+  kelime === tersDondurme(kelime) ? true : false;
+
+console.log(palindrome("madam", tersDondurme)); // true
+console.log(palindrome("hello", tersDondurme)); // false
+
+/*
+
+Question 46
+
+
+
+*/
