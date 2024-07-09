@@ -106,6 +106,26 @@ console.log(palindrome("hello", tersDondurme)); // false
 
 Question 46
 
+Using an IIFE, calculate the square of the numbers 1 through 10 and store these squares in an array. Finally, print this string to the console.
+
+
+*/
+
+(function () {
+  let squares = [];
+
+  for (let i = 1; i <= 10; i++) {
+    squares.push(i ** 2);
+  }
+
+  console.log("Square of the numbers 1 through 10", squares);
+})();
+
+/*
+
+Question 47
+
+
 
 
 */
