@@ -120,12 +120,3 @@ Using an IIFE, calculate the square of the numbers 1 through 10 and store these 
 
   console.log("Square of the numbers 1 through 10", squares);
 })();
-
-/*
-
-Question 47
-
-
-
-
-*/
