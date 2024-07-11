@@ -6,14 +6,12 @@ Convert all the letters of a string to uppercase.
 
 */
 
-
-const anime ="solo leveling"
+const anime = "solo leveling";
 const convertToAnime = anime.toUpperCase();
 console.log(convertToAnime);
 
-const allSmallLetters= convertToAnime.toLowerCase();
+const allSmallLetters = convertToAnime.toLowerCase();
 console.log(allSmallLetters);
-
 
 /*
 
@@ -23,9 +21,9 @@ Find the character at a specific index in a string.
 
 */
 
-const forLove="lOVE IS LOVE "
-const findLove=forLove.charAt(6);
-const findLoveEnd=forLove.charAt(13);
+const forLove = "lOVE IS LOVE ";
+const findLove = forLove.charAt(6);
+const findLoveEnd = forLove.charAt(13);
 
 console.log(findLove);
 console.log(findLoveEnd);
@@ -38,11 +36,9 @@ Check if a string contains a specific substring.
 
 */
 
-const fullstack="react, javascript, HTML"
-const findLibrary=fullstack.includes("react");
+const fullstack = "react, javascript, HTML";
+const findLibrary = fullstack.includes("react");
 console.log(findLibrary);
-
-
 
 /*
 
@@ -52,12 +48,9 @@ Find the index of the first occurrence of a specific substring in a string.
 
 */
 
-
-const animewars="Son Goku vs Saitama";
-const Winner=animewars.indexOf("Saitama");
+const animewars = "Son Goku vs Saitama";
+const Winner = animewars.indexOf("Saitama");
 console.log(Winner);
-
-
 
 /*
 
@@ -68,11 +61,10 @@ only the first and last 3 characters of the original string. Use the slice() met
 
 */
 
-const ichigo="1000 Thousand Years Blood";
-const lastSeason=ichigo.slice(0,3); 
-const lastSeason2=ichigo.slice(-3); 
+const ichigo = "1000 Thousand Years Blood";
+const lastSeason = ichigo.slice(0, 3);
+const lastSeason2 = ichigo.slice(-3);
 console.log(lastSeason);
-
 
 /*
 
@@ -82,26 +74,21 @@ Write a function in JavaScript that takes a sentence as input and returns an arr
 
 */
 
+const anime2 = "anime is not a cartoon o_o"; // first Way
+const words = anime2.split(" ");
 
-const anime2="anime is not a cartoon o_o" // first Way
-const words=anime2.split(" ");
+let firstThreeWords = [];
 
-let firstThreeWords=[];
-
-for(let i= 0 ; i<3 ; i++) {
-
-firstThreeWords.push(words[i]);
+for (let i = 0; i < 3; i++) {
+  firstThreeWords.push(words[i]);
 }
 
 console.log(firstThreeWords);
 
-
 function getFirstThreeWords(sentence) {
+  const words2 = sentence.split(" ");
 
-    const words2=sentence.split(" ");
-
-    return words2.slice(o,3);
-
+  return words2.slice(o, 3);
 }
 
 /*
@@ -113,21 +100,19 @@ Write a function in JavaScript that takes a string as input and replaces all occ
 */
 
 function replaceCatWithDog(input) {
-    return input.replace(/cat/g, "dog");
+  return input.replace(/cat/g, "dog");
 }
 
 console.log(replaceCatWithDog("The cat is on the roof. The cat is black"));
 
 //---------------------------------
 
-
 function replaceRoofWithTop(input) {
-    return input.replace(/roof/g, "top");
+  return input.replace(/roof/g, "top");
 }
 
 console.log(replaceRoofWithTop("The cat is on the roof. The cat is black."));
 // console: "The cat is on the top. The cat is black."
-
 
 /*
 
@@ -137,12 +122,11 @@ What will be the result of concatenating an array with a nested array using the 
 
 */
 
-const dragonball=["Piccolo", "Son Goku"];
-const onepunchman=["Saitama", "Genos"];
+const dragonball = ["Piccolo", "Son Goku"];
+const onepunchman = ["Saitama", "Genos"];
 
-let result=dragonball.concat(onepunchman);
+let result = dragonball.concat(onepunchman);
 console.log(result);
-
 
 /*
 
@@ -152,9 +136,33 @@ The trim method in JavaScript is used to remove whitespace from both ends of a s
 
 */
 
-
-let sololeveling = " Jin woo is coming back"
+let sololeveling = " Jin woo is coming back";
 
 let sololevelingseason2 = sololeveling.trim();
 
 console.log(sololevelingseason2);
+
+/*
+
+Question 56 
+
+Given the string str = "Hello, World!", what will be the result of the following code?
+
+*/
+
+str = "ozlem bazen koyuyor";
+let result3 = str.substring(7, 12);
+console.log(result3);
+
+/*
+
+Question 57
+
+Given the string str = "Hello, World!", what will be the result of the following code?
+
+*/
+
+let str2 = ["Hello", "World!"];
+let newstr2 = str2.join(",");
+
+console.log(newstr2);
