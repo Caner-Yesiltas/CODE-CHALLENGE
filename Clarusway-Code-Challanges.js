@@ -26,3 +26,43 @@ reverse("Happy") ➞ yppaH
 */
 
 
+
+function reverseString(str) {
+
+    reverseStr=""
+
+    reverseStr=str.split('').reverse().join('');
+
+    return reverseStr
+
+    
+}
+
+console.log(reverseString("Uber"));
+
+
+//2 . yol for dongusu ile yapilisi
+
+
+function reverseStringWithFor(str) {
+
+    let reverseStr2=""
+
+    for(let i= str.length-1; i>=0; i--){
+
+        reverseStr2+= str[i];  // karakterleri tekrar isledigimiz icin [] array parantezi kullandik
+    }
+    
+    return reverseStr2;
+}
+
+console.log(reverseStringWithFor("Uber"));
+
+
+/*
+
+Question 1
+
+
+
+*/
