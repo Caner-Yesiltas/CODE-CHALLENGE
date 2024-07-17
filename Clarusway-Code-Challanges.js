@@ -220,3 +220,13 @@ console.log(areAnagrams("race", "racing")); // Should print false
 ⌛ Happy Coding ✍
 
 */
+
+function areAnagrams(str1, str2) {
+  const normalize = (str) => {
+    return str.toLowerCase().split("").sort().join("");
+  };
+  return normalize(str1) === normalize(str2);
+}
+
+console.log(areAnagrams("listen", "silent")); // true
+onsole.log(areAnagrams("hello", "world")); // false
