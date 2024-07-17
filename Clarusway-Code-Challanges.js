@@ -220,8 +220,7 @@ console.log(areAnagrams("race", "racing")); // Should print false
 ⌛ Happy Coding ✍
 
 */
-javascript
-Copy code
+
 function areAnagrams(str1, str2) {
     // Küçük harfe dönüştürme ve sıralama işlemi yap
     const sortedStr1 = str1.toLowerCase().split('').sort().join('');
