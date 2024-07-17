@@ -220,13 +220,17 @@ console.log(areAnagrams("race", "racing")); // Should print false
 ⌛ Happy Coding ✍
 
 */
-
+javascript
+Copy code
 function areAnagrams(str1, str2) {
-  const normalize = (str) => {
-    return str.toLowerCase().split("").sort().join("");
-  };
-  return normalize(str1) === normalize(str2);
+    // Küçük harfe dönüştürme ve sıralama işlemi yap
+    const sortedStr1 = str1.toLowerCase().split('').sort().join('');
+    const sortedStr2 = str2.toLowerCase().split('').sort().join('');
+
+    // Normalize edilmiş stringleri karşılaştır
+    return sortedStr1 === sortedStr2;
 }
+
 
 console.log(areAnagrams("listen", "silent")); // true
 onsole.log(areAnagrams("hello", "world")); // false
