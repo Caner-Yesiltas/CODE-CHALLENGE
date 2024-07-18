@@ -75,20 +75,15 @@ Bir string içindeki tüm boşlukları '%20' ile değiştiren bir fonksiyon yaz�
 */
 
 function replaceSpaces(str) {
+  let splitstr = str.split(" "); // bosluk kelime kelime ayirir demek
 
-  let splitstr= str.split(' '); // bosluk kelime kelime ayirir demek
+  let result = splitstr.join("%20"); // joinin icine ne yazarsan kelimelerin arasina onlari koyar iki kelimenin arasina ve sadece dizilerde kullanilir.
 
-  let result=splitstr.join('%20'); // joinin icine ne yazarsan kelimelerin arasina onlari koyar iki kelimenin arasina ve sadece dizilerde kullanilir.
-
-  return result
-  
+  return result;
 }
-
 
 console.log(replaceSpaces("Hello World")); // "Hello%20World"
 console.log(replaceSpaces("Front end developer")); // "Front%20end%20developer"
-
-
 
 /*
 
@@ -100,24 +95,18 @@ Verilen bir sayı dizisindeki en büyük ve en küçük sayıyı bulup farkını
 */
 
 function findDifference(numbers) {
+  let numArray = number.split(" "); // stringi bosluk karakterine gore boler ve sonra her birini dizi haline getirir.
 
-let numArray = number.split(' '); // stringi bosluk karakterine gore boler ve sonra her birini dizi haline getirir.
+  numArray = numArray.map(Number); // Dizi deki elemanlari sayiya donusturur.
 
-numArray= numArray.map(Number); // Dizi deki elemanlari sayiya donusturur.
+  let maxNum = math.max(...numArray);
 
+  let minNum = math.min(...numArray);
 
-let maxNum= math.max(...numArray);
+  let difference = maxNum - minNum;
 
-let minNum=math.min(...numArray);
-
-let difference= maxNum-minNum;
-
-return difference;
-
+  return difference;
 }
-  
-
-
 
 console.log(findDifference("1 2 3 4 5")); // 4 (5 - 1)
 console.log(findDifference("10 20 30 40 50")); // 40 (50 - 10)
