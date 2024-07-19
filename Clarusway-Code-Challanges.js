@@ -219,17 +219,21 @@ console.log(areAnagrams("hello", "holla")); // Should print false
 console.log(areAnagrams("race", "racing")); // Should print false
 ⌛ Happy Coding ✍
 
+const anagram = (str1, str2) => { //'verdiğimiz iki stringin anagram olup olamdıklarını kontrol edecek fonksiyon.
+  function kontrol(str) { //'içerdeki kontrol fonksiyonu
+    return str //?küçük harfe çevir
+      .replace(/[^a-z0-9]/g, "") //?harf ve rakam dışındaki tüm karakterleri kaldır
+
 */
 
 function areAnagrams(str1, str2) {
-    // Küçük harfe dönüştürme ve sıralama işlemi yap
-    const sortedStr1 = str1.toLowerCase().split('').sort().join('');
-    const sortedStr2 = str2.toLowerCase().split('').sort().join('');
+  // Küçük harfe dönüştürme ve sıralama işlemi yap
+  const sortedStr1 = str1.toLowerCase().split("").sort().join("");
+  const sortedStr2 = str2.toLowerCase().split("").sort().join("");
 
-    // Normalize edilmiş stringleri karşılaştır
-    return sortedStr1 === sortedStr2;
+  // Normalize edilmiş stringleri karşılaştır
+  return sortedStr1 === sortedStr2;
 }
-
 
 console.log(areAnagrams("listen", "silent")); // true
 onsole.log(areAnagrams("hello", "world")); // false
