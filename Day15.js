@@ -48,6 +48,31 @@ let salaries=[18000,13000,17000,24000,18500,21000,19300]
 
 let budget = ? 
 
+
+Soru: Anonim fonksiyonların hepsi otomatik değer döndürdüğü için return kullanılmaz mı?
+Hayır. Anonim fonksiyonlar her zaman otomatik değer döndürmez. return ifadesi, anonim fonksiyonlarda gerektiğinde kullanılabilir. Bu, fonksiyonun türüne ve yapısına bağlıdır.
+
+Arrow fonksiyonlar (tek satırlık): return ifadesi gerekmez, çünkü tek satırlık ifadeler otomatik olarak döner.
+
+javascript
+Copy code
+const exampleArrowFunction = (x) => x * 2; // Otomatik olarak x * 2 döner
+Arrow fonksiyonlar (çok satırlık): {} blokları kullanıldığında return ifadesi gerekir.
+
+javascript
+Copy code
+const exampleArrowFunction = (x) => {
+  return x * 2; // 'return' kullanılması gerekir
+};
+Anonim fonksiyonlar (function anahtar kelimesiyle): Her zaman return ifadesine ihtiyaç duyar.
+
+javascript
+Copy code
+const exampleFunction = function(x) {
+  return x * 2; // 'return' kullanılması gerekir
+};
+
+
 */
 
 const maas = (arr) => {
@@ -59,3 +84,7 @@ const maas = (arr) => {
     return bütce;
   };
   console.log(maas([18000, 13000, 17000, 24000, 18500, 21000, 19300]));
+
+
+
+  
