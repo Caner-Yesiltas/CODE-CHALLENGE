@@ -10,16 +10,19 @@ Question 82
 
 */
 
-function findClarusway(sentence){
+function findClarusway(sentence) {
+  const findWord = "Clarusway";
 
-    const findWord = "Clarusway";
+  const index = sentence
+    .split(" ")
+    .map((w, i) => (w === findWord ? i : -1))
+    .find((num) => num !== -1); // map methodunda da kosul kullanilabilir
 
-    const index = sentence.split(" ").map((w, i) => w === findWord ? i : -1).find(num => num !== -1); // map methodunda da kosul kullanilabilir
-
-    return  index !== undefined ? `I found at ${findWord} at ${index}` : `I can't find ${findWord}`;
+  return index !== undefined
+    ? `I found at ${findWord} at ${index}`
+    : `I can't find ${findWord}`;
 }
 console.log(findClarusway("I like Clarusway"));
-
 
 /*
 
@@ -36,7 +39,6 @@ Ancak, siz bu argümanların hepsini kullanmak zorunda değilsiniz. Sadece ihtiy
 */
 
 console.log(findClarusway("I like bootcamps "));
-
 
 /*
 
@@ -76,15 +78,11 @@ const exampleFunction = function(x) {
 */
 
 const maas = (arr) => {
-    const bütce = arr
-      .filter((x) => x < 20000)
-      .map((x) => 20000 - x)
-      .reduce((toplam, x) => toplam + x);
-  
-    return bütce;
-  };
-  console.log(maas([18000, 13000, 17000, 24000, 18500, 21000, 19300]));
+  const bütce = arr
+    .filter((x) => x < 20000)
+    .map((x) => 20000 - x)
+    .reduce((toplam, x) => toplam + x);
 
-
-
-  
+  return bütce;
+};
+console.log(maas([18000, 13000, 17000, 24000, 18500, 21000, 19300]));
