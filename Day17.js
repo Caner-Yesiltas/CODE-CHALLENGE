@@ -162,11 +162,3 @@ const newStudents = students.map(
 );
 
 console.log(newStudents);
-
-
-/*
-
-Question 93
-
-
-*/
