@@ -52,3 +52,5 @@ let divAllBackgrounds = document.querySelectorAll("div");
 divAllBackgrounds.forEach((div) => {
   div.style.backgroundColor = "blue";
 });
+
+
